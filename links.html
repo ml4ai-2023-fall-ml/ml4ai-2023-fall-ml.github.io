@@ -1,0 +1,620 @@
+<html>
+
+<!-- START HEADER -->
+
+<table style="border: 0px dotted; border-color:#555555" width=700 align=center>
+<tr><td bgcolor="#fefefe"><center>
+
+<!-- HEADER BODY -->
+<head>
+  <title>Intro to Machine Learning</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta NAME="KEYWORDS" CONTENT="clayton morrison, machine learning">
+  <meta NAME="DESCRIPTION" CONTENT="ISTA 421 / INFO 521: Machine Learning homepage.">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	
+
+<div style="position:relative; left:0">
+  <div style="line-height:1">
+  <font size=+2 color="#222222">ISTA 421 / INFO 521</font><br> 
+  <font size=+3 color="#222222"><b>Introduction to Machine Learning</b></font><br>
+  <font size=+2 color="#222222">[Fall 2021]</font><br>
+  </div>
+
+  <div style="line-height:2">
+    <a href="index.html">course home</a> |
+    <a href="ISTA421-INFO521-Machine-Learning-Syllabus-fall2021.pdf">syllabus [pdf]</a> |
+    <a href="python_setup.html">python setup</a> |
+    <!-- <a href="tutorial.html">short code tutorial</a> | -->
+    <a href="submissions.html">submission instructions</a> |
+    <a href="links.html">links</a> |
+    <a href="schedule.html">schedule</a>
+  </div>
+</div>
+<!-- END HEADER BODY -->
+
+</center></td> </tr>
+</table>
+
+<table style="border: 0px dotted; border-color:#555555; position:relative; top: 1;" width=700 align=center>
+<tr><td bgcolor="#333333"></td></tr>
+</table>
+
+<table style="border: 0px dotted; border-color:#555555; position:relative; top: 1;" width=700 align=center>
+<tr><td bgcolor="#fefefe"><br><br>
+
+<center>
+<table width=600 align=center>
+<tr><td>
+
+<!-- END HEADER -->
+
+
+<!-- MAIN BODY : LINKS -->
+
+<center><font size=+2><b>Links</b></font></center>
+
+<h2> <a href="submissions.html">Assignment Submission Instructions</a> </h2>
+
+<h2> Course Texts </h2>
+<ul>
+  <li> <b>(FCML)</b>
+    <a href="http://www.dcs.gla.ac.uk/~srogers/firstcourseml/">A First Course in Machine Learning - Second Edition</a><br>
+    You can access an electronic version of the book from 
+    <a href="https://arizona-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=01UA_ALMA51531560810003843&context=L&vid=01UA&search_scope=Everything&isFrbr=true&tab=default_tab&lang=en_US">
+    this UA Library link</a>
+    <!-- >(also available from the course D2L webpage, under the Library Tools page, upper right). Once you follow that link to the UA Library book record, click the link to "FIND on the Web". -->
+    <!--
+    ; the first edition is available online through the 
+    <a href="http://arizona.summon.serialssolutions.com/#!/search?bookMark=ePnHCXMw42JgAfZbU5mhpykZW1oA6whQl4MLXNUYWxqDr6UDNlONQJs-jTjgAyKGFgZmBsacDEqOCmnAHnuJQnI-aB2DQmaeQi54YWGqAvQmhXRuBgU31xBnD11gf7IK2GKNh451xCeBjtcytjQB3SZCUAkAqSctnw">UA Library</a>, but be aware that we will be using the second edition for the class, which includes 3 additional chapters and some revisions to earlier chapters.
+    -->
+  </li>
+</ul>
+<ul>
+  <li> <b>(M4ML)</b>
+    <a href="https://mml-book.github.io/">Mathematics For Machine Learning</a> 
+    [<a href="https://mml-book.github.io/book/mml-book.pdf">pdf</a>]
+  </li>
+</ul>
+<ul> 
+  <li> <b>(ISLR)</b>
+    <a href="http://www-bcf.usc.edu/~gareth/ISL/">An Introduction to Statistical Learning</a>
+    [<a href="http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Seventh%20Printing.pdf">pdf</a>]
+  </li>
+</ul>
+
+<h2> Additional Text Resources (will reference some content) </h2>
+<ul>
+  <li>
+    <a href="http://www.deeplearningbook.org/">
+    Deep Learning</a> by Ian Goodfellow, Yoshua Bengio and Aaron Courville.<br>
+    On foundations of modern neural networks.  Available free online.
+  </li>
+</ul>
+<ul>
+  <li>
+    <a href="http://d2l.ai/">Dive into Deep Learning</a> 
+    by Aston Zhang, Zack C. Lipton, Mu Li and Alex J. Smola.<br>
+    An interactive deep learning book with code, math, and discussions.
+  </li>
+</ul>
+<ul>
+  <li> <b>(DBDA)</b>
+    <a href="https://sites.google.com/site/doingbayesiandataanalysis/">
+      Doing Bayesian Data Analysis (Second Edition)</a> by John Kruschke.<br>
+    Available online through the <a href="https://arizona-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=01UA_ALMA51528359040003843&context=L&vid=01UA&search_scope=Everything&isFrbr=true&tab=default_tab&lang=en_US">UA Library</a>
+</ul>
+<ul>
+  <li>
+    <a href="http://www-stat.stanford.edu/~tibs/ElemStatLearn/">
+    The Elements of Statistical Learning</a> by Trevor Hastie, Robert Tibshirani and Jerome Friedman.<br>
+    Link to website for the Hastie et al. book, available for free online.
+  </li>
+</ul>
+<ul>
+  <li>
+    <a href="https://www.cs.cornell.edu/jeh/book%20July%202018.pdf">
+    Foundations of Data Science</a> by Avrim Blum, John Hopcroft and Ravindran Kannan.<br>
+    Available through <a href="https://www.cs.cornell.edu/jeh/">John Hopcroft's website</a>.
+  </li>
+</ul>
+<ul>
+  <li>
+    <a href="http://www.gaussianprocess.org/gpml/">
+    Gaussian Processes for Machine Learning</a> by Carl Rasmussen and Christopher Williams.<br>
+    Book page, including complete <a href="http://www.gaussianprocess.org/gpml/chapters/RW.pdf">pdf</a>, of the very good Rasmussen and Williams text.
+  </li>
+  <li>
+  	<a href="https://www.jgoertler.com/visual-exploration-gaussian-processes/">A Visual Exploration of Gaussian Processes</a>
+  </li>
+</ul>
+<ul>
+  <li> <b>(PRML)</b>
+    <a href="http://research.microsoft.com/en-us/um/people/cmbishop/prml/">
+    Pattern Recognition and Machine Learning</a> by Christopher Bishop.
+  </li>
+</ul>
+<ul>
+  <li> <b>(CIML)</b>
+    <a href="http://ciml.info/">
+    A Course in Machine Learning</a> by Hal Daumé III.
+  </li>
+</ul>
+
+<h2>Programming</h2>
+
+<b>Unix</b><br>
+
+<ul>
+  <li><a href="http://www.ee.surrey.ac.uk/Teaching/Unix/">
+      Surrey UNIX Tutorial for Beginners</a>
+</ul>
+
+<b>Python</b><br>
+
+<ul>
+<ul>
+  <li>
+    <a href="http://python.org/">http://python.org/</a>
+  </li>
+  <li>
+    <a href="https://docs.python.org/3.8/tutorial/">The Python (3.8) Tutorial</a>
+  </li>
+</ul>
+<li> Other Useful Python tutorials
+  <ul>
+    <li><a href="https://open.openclass.ai/classes/python-foundations">Free online Python course</a> created by Alec Kretch.
+    </li>
+    <li><a href="http://showmedo.com/videotutorials/series?name=i9KuJuNcG">
+      Getting started with numpy arrays</a> (11 short (~6min) videos)
+    </li>
+  </ul>
+</li>
+<li> Python Editors and IDEs
+<ul>
+  <li> <a href="http://wiki.python.org/moin/PythonEditors">Python.org List of Python Editors</a> </li>
+  <li> <a href="http://www.jetbrains.com/pycharm/">PyCharm</a> multiplatform, full featured IDE; free Community Edition</li>
+  <li> <a href="https://www.anaconda.com/products/individual">Anaconda</a> Individual Edition - a complete python distribution and python environment manager </li>
+  <!--
+  <li> <a href="https://store.enthought.com/downloads/">Canopy Express</a> a multi-platform complete install of python, from <a href="https://www.enthought.com/">Enthought</a></li>
+  <li> <a href="http://code.google.com/p/iep/">IEP</a> open source multiplatform Python IDE</li>
+  <li> <a href="http://code.google.com/p/spyderlib/">Spyder</a> another multiplatform Python IDE</li>
+  -->
+</ul>
+</li>
+<li>Notes on setting up environments
+<ul>
+  <li> <a href="http://www.lowindata.com/2013/installing-scientific-python-on-mac-os-x/">Mac OS X Lion/Mountain Lion</a> instructions using homebrew</li>
+  <!--
+  <li> <a href="resources/python/pythonbrew-and-iep.html">Instructions</a> for using Pythonbrew to install python and work with IEP on MacOSX (includes installation of matplotlib)</li>
+  <li> <a href="resources/python/tutorial/eclipse.html">Instructions</a> for using eclipse and PyDev as an IDE 
+    (may be a little out of date) </li>
+  -->
+</ul>
+</li>
+<li> Three python libraries you will need:
+<ul>
+  <li>
+    <a href="http://numpy.scipy.org/">NumPy</a><br>
+      Python library for mathematical computing.
+    </li>
+  <li>
+    <a href="http://www.scipy.org/">SciPy</a><br>
+      Builds on NumPy with additional scientific computing facilities.
+  </li>
+  <li>
+    <a href="http://matplotlib.sourceforge.net/">matplotlib</a><br>
+      Python library for plotting/graphing, intentionally close to Matlab's plotting facility.
+  </li>
+</ul>
+</li>
+
+<br>
+<b>LaTeX</b><br>
+
+All written assignments will be released in LaTeX, and it is highly recommend that you use LaTeX.  Yes, it's another programming language, but the assignments will provide most of the required formatting.  It is truly the best way to format math.  There are MANY resources available online (just google!) -- here are two links to get you started:
+<ul>
+  <li>
+    <a href="https://www.latex-project.org/get/">Directions for getting LaTeX on your computer</a>
+  </li>
+  <li>
+    <b>Editors/iterfaces:</b> On the Mac, if you install the LaTeX framework using <a href="http://www.tug.org/mactex/">MacTeX</a>, you get the great TeXShop IDE.<br>
+    Here are two editor/interface options for Windows:
+    <ul>
+      <li><a href="http://www.xm1math.net/texmaker/">TexMaker</a></li>
+      <li><a href="https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop">LaTeX Workshop Extension for Visual Studio Code</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="https://www.latex-tutorial.com/">A comprehensive LaTeX tutorial resource</a>
+  </li>
+  <li>
+    Looking for a LaTeX math/symbol code?: <a href="http://detexify.kirelabs.org/classify.html">Detexify</a>!  (Handwritten symbol recognition, built with machine learning!)
+  </li>
+  <li>
+    <a href="https://en.wikibooks.org/wiki/LaTeX/Mathematics">LaTeX Mathematics wikibook</a>
+  </li>
+</ul>
+
+<!--
+Matlab<br><br>
+<ul>
+  <li><a href="https://sitelicense.arizona.edu/matlab/index.php">UA Matlab license</a></li>
+  <li><a href="http://www.mathworks.com/">MathWorks</a></li>
+  <li><a href="http://www.math.ufl.edu/help/matlab-tutorial/">One</a> of 
+    <a href="https://www.google.com/search?q=matlab+tutorial">many</a> online matlab tutorials</li>
+</ul>
+-->
+
+
+<h2>Math Review</h2>
+
+<b>Calculus</b><br>
+<ul>
+  <li>
+    <a href="https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr">3Blue1Brown Essence of Calculus</a>.  Gorgeous series of 11 videos that introduce the intuition behind the development of calculus.  Great overview/review.
+    (A little more tangential (pun intended), but here's a followup vid with some additional nice intuition about <a href="https://www.youtube.com/watch?v=CfW845LNObM">derivatives</a>.)
+  </li>
+  <li>
+    We will work with derivatives in this class.  Do not be put off if you need some review.  Here is the general link for Khan Academy <a href="https://www.khanacademy.org/math/differential-calculus">Differential Calculus</a>, but the following two links are most relevant for reviewing the basic mechanics of differentiation we'll use in this course:
+    <ul>
+    <li><a href="https://www.khanacademy.org/math/differential-calculus/basic-differentiation-dc">Basic differentiation</a>: power rule, polynomials, rational functions (negative powers), radical functions (fractional powers), e^x and ln(x).</li>
+    <li><a href="https://www.khanacademy.org/math/differential-calculus/product-quotient-chain-rules-dc">The product, quotient and chain rules</a></li>
+    <li>For <b>partial derivatives</b>, see the links below under multivariable (vector) calculus.</li>
+    </ul>
+  </li>
+  <li>
+    We will see integrals (particularly with expectations of continuous random variables), although we will only do a little actual integrating.  It is important to understand the intuitions underlying integration.  The above "3Blue1Brown Essence of Calculus" will give a lot of this.
+    <ul>
+      <li>Here is the top-level link to the Khan Academy <a href="https://www.khanacademy.org/math/integral-calculus">Integral Caculus Series</a>.  You can browse for particular topics to review</li>
+      <li>I do recommend the first three videos of <a href="https://www.khanacademy.org/math/integral-calculus/definite-integral-evaluation-ic">definite integral evaluation</a> to review how to evaluate basic definite integrals (along with the second fundamental theorem of calculus).</li>
+    </ul>
+  </li>
+</ul>
+
+<br>
+<b>Linear Algebra</b><br>
+<ul>
+  <li>
+    <a href="https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab">3Blue1Brown Essence of Linear Algebra</a>.  Again, really well-done series, 15 videos that develop great intuitions of linear algebra, emphasizing the underlying visualizable geometry (when dimensions are low enough!).
+  </li>
+  <li>
+    <a href="https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/">Gilbert Strang MIT OpenCourseWare Linear Algebra Course</a>.  The full course, 36 videos.  Excellent and very accessible, good for first time exposure, and for reviewing concepts.
+  </li>
+  <li>
+    <a href="https://www.commonlounge.com/discussion/6ee5dbd8c2754e0db1acd312aec608cc">Linear Algebra Common Lounge quick overview</a>.  This summarizes as a very quick reference some common linear algebra topics.  (Warning: under the Vector Spaces topic, when they say "lengh 2 vector" they mean 2-dimensional, NOT the magnitude of the vector; I think this is unfortunate wording.)
+  </li>
+</ul>
+
+<br>
+<b>Multivariable (vector) Calculus</b><br>
+<ul>
+<li>I don't require vector calculus as a pre-requisite for this class, but we will be working with multivariable functions, taking derivatives of these functions, and representing the gradient, so we will need a little bit of vector calc (there's much more to vector calc than what we will use).  If this is new to you, don't worry!  The following Khan Academy videos provide what we need of vector calculus for this course, and I will also review along the way during the course.</li>
+<li>If just thinking about multivariable functions is new to you, start with this short video: <a href="https://www.khanacademy.org/math/multivariable-calculus/thinking-about-multivariable-function/introduction-to-multivariable-calculus/v/multivariable-functions">Introduction to multivariable calculus</a>.</li>
+<li>Then take a look at this series of Khan Academy videos on: <a href="https://www.khanacademy.org/math/multivariable-calculus/multivariable-derivatives">Derivatives of Multivariable Functions</a>.  We only need the following two components from this series:
+  <ul>
+  <li><b>Partial derivatives</b>: watch the four videos of section 1 (Partial derivatives).  And check out these two Khan Academy "articles":
+    <a href="https://www.khanacademy.org/math/multivariable-calculus/multivariable-derivatives/partial-derivative-and-gradient-articles/a/introduction-to-partial-derivatives">Intro to partial derivatives</a> and 
+    <a href="https://www.khanacademy.org/math/multivariable-calculus/multivariable-derivatives/partial-derivative-and-gradient-articles/a/second-partial-derivatives">Second partial derivatives</a>
+  </li>
+  <li><b>Gradient</b>: The gradient is just a vector representation of a set of partial derivatives.  If this is new (or you need review), watch the first three videos of section 2 (Gradient and directional derivatives).  And check out this Khan Academy "article": <a href="https://www.khanacademy.org/math/multivariable-calculus/multivariable-derivatives/partial-derivative-and-gradient-articles/a/the-gradient">The gradient</a><br>
+  A very nice intuitive overview of the "Nabla"/"Del" operator (used to define the gradient (Grad)): <a href="https://www.youtube.com/watch?v=hI4yTE8WT88">This Downward Pointing Triangle Means Grad Div and Curl in Vector Calculus (Nabla / Del) by Parth G</a> (and check out Parth's other videos on introductory physics).
+  </li>
+  </ul>
+<li>We will <b>not</b> be using directional derivatives or any of the other derivative-related operators (grad, div, curl, Laplace, etc...). (although they're all cool in their own right!)</li>
+</ul>
+
+<br>
+<b>Probability</b><br>
+<ul>
+  <li>Chapter 4 of DBDA (book above) provides a nice introduction to probability.</li>
+  <li><a href="https://seeing-theory.brown.edu">Seeing Theory: A Visual Introduction to Probability and Statistics</a></li>
+  <li><a href="https://www.khanacademy.org/math/statistics-probability/probability-library">Khan Academy Probability Library (video sequence)</a></li>
+</ul>
+
+<br>
+<b>Misc</b><br>
+<ul>
+  <li>
+    <a href="https://www.youtube.com/watch?v=sULa9Lc4pck">Triangle of Power!</a>  More for fun, this is another nice 3Blue1Brown video about the relationship between base, exponentiation and logarithm, and why notation matters!
+  </li>
+  <li>
+  	<a href="https://cdsmithus.medium.com/the-logarithm-of-a-sum-69dd76199790">Logarithm of a sum</a>
+  </li>
+</ul>
+
+
+<h2>Misc general introductory machine learning</h2>
+<ul>
+  <li>
+    <a href="https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf">A Few Useful Things to Know about Machine Learning (pdf)</a>
+  </li>
+
+  <li>
+  	<a href="http://www.r2d3.us/">R2D3: Expressing statistical thinking with interactive design</a>
+  	<br>
+  	A Visual Introduction to Machine Learning:
+  	<ul>
+  	<li><a href="http://www.r2d3.us/visual-intro-to-machine-learning-part-1/">Part I - Introduction, A Decision Tree</a></li>
+  	<li><a href="http://www.r2d3.us/visual-intro-to-machine-learning-part-2/">Part II - Model Tuning and the Bias-Variance Tradeoff</a></li>
+  	</ul>
+  </li>
+
+  <li>
+    <a href="http://www.thetalkingmachines.com/">Talking Machines: Human conversation about machine learning</a>
+  </li>
+  
+  <li>
+  	<a href="https://medium.com/machine-learning-for-humans">Machine Learning for Humans</a>
+  </li>
+
+  <li>
+    <a href="http://xyclade.github.io/MachineLearning/">Machine Learning for Developers</a>
+  </li>
+
+  <li>
+    <a href="https://www.reddit.com/r/MachineLearning/comments/1jeawf/machine_learning_books/">List of online machine learning books</a>
+  </li>
+</ul>
+
+
+<h2>AI/ML Ethics and Social Issues</h2>
+<ul>
+	<li>
+		<a href="https://www.whitehouse.gov/ostp/ai-bill-of-rights/">Blueprint for an AI Bill of Rights</a>
+	</li>
+	<li>
+		<a href="https://www.youtube.com/watch?v=BY9KV8uCtj4">
+		[2023/04/07] Yann LeCun and Andrew Ng: Why the 6-month AI Pause is a bad idea</a>
+	</li>
+	<li>
+		<a href="https://www.nytimes.com/2023/04/07/technology/ai-chatbots-google-microsoft.html">
+		[2023/04/07] New York Times Article: In A.I. Race, Microsoft and Google Choose Speed Over Caution.</a>
+	</li>
+	<li>
+		<a href="https://en.wikipedia.org/wiki/Ethics_of_artificial_intelligence">
+		Wikipedia: Ethics of artificial intelligence</a>
+	</li>
+</ul>
+
+
+<h2>General ML-related blogs</h2>
+<ul>
+  <li>
+    <a href="https://blog.acolyer.org/">the morning paper</a>
+  </li>
+  <li>
+    <a href="http://karpathy.github.io/">Andrej Karpathy blog</a>
+  </li>
+</ul>
+
+
+<h2>Probability and Statistics</h2>
+<ul>
+  <li>
+    <a href="https://seeing-theory.brown.edu/">Seeing Visualized</a><br>
+    Collection of online interactive demos of statistics and probability concepts (with book) - very nice!
+  </li>
+  <li>
+    <a href="https://probmods.org/index.html">Probabilistic Models of Cognition</a><br>
+    Very nice collection of discussions on various probability topics by Noah D. Goodman and Joshua B. Tenenbaum, emphasizing a Bayesian perspective.
+  </li>
+  <li>
+  	<a href="https://towardsdatascience.com/statistics-are-you-bayesian-or-frequentist-4943f953f21b">Statistics: Are you a Bayesian or a Frequentist?</a>
+  </li>
+  <li>
+    <a href="http://math.stackexchange.com/questions/469974/why-would-i-use-bayes-theorem-if-i-can-directly-compute-the-posterior-probabili">math.stackexchange: why use Bayes' Theorem...</a><br>
+	A nice response to a question about the difference between being Frequentist versus Bayesian and the role of Bayes' Theorem; also the difference between descriptive versus inferential statistics.
+  </li>
+  <li>
+    <a href="https://www.youtube.com/watch?v=ebEkn-BiW5k">Simpson's Paradox!</a><br>
+    ... Minute Physics style.
+  </li>  
+  <li>
+  	<a href="https://www.quora.com/What-is-tautological-bias"></a>What is tautological bias?<br>
+  	A nice explanation.
+  </li>
+</ul>
+
+
+<h2>Lessons in proper assessment of machine learning</h2>
+<ul>
+  <li>
+  	<a href="https://www.technologyreview.com/2021/07/30/1030329/machine-learning-ai-failed-covid-hospital-diagnosis-pandemic">Hundreds of AI tools have been built to catch covid. None of them helped.</a>
+  </li>
+  <li>
+    <a href="https://www.youtube.com/watch?v=DQWI1kvmwRg">Machine Learning A Capella - Overfitting Thriller!</a>
+  </li>
+  <li>
+    <a href="http://arstechnica.co.uk/security/2016/02/the-nsas-skynet-program-may-be-killing-thousands-of-innocent-people/">Article about issues in proper risk assessment</a>
+  </li>
+</ul>
+
+
+<h2>Interpretable Machine Learning</h2>
+<ul>
+  <li>
+  	<a href="https://christophm.github.io/interpretable-ml-book/">Christoph Molnar's Interpretable Machine Learning: A guide for making black box models explainable</a>
+  </li>
+</ul>
+
+
+<h2>Clustering</h2>
+<ul>
+  <li>
+    <a href="http://www.naftaliharris.com/blog/visualizing-k-means-clustering/">
+      visualizing K-Means clustering
+    </a>
+  </li>
+</ul>
+
+
+<h2>Kernels</h2>
+<ul>
+  <li>
+    <a href="http://www.cs.toronto.edu/~duvenaud/cookbook/index.html">The Kernel Cookbook</a>
+  </li>
+  <li>
+    <a href="http://crsouza.blogspot.com/2010/03/kernel-functions-for-machine-learning.html">Kernel Functions for ML</a>
+  </li>
+</ul>
+
+
+<h2>Support Vector Machines (SVMs)</h2>
+<ul>
+  <li>
+    <a href="https://www.csie.ntu.edu.tw/~cjlin/libsvm/">LibSVM</a>
+    and
+    <a href="https://www.csie.ntu.edu.tw/~cjlin/liblinear/">LibLINEAR</a>
+  </li>
+  <li>
+    <a href="http://www.csie.ntu.edu.tw/~cjlin/papers/guide/guide.pdf">A practical guide to support vector classification [pdf]</a>
+  </li>
+</ul>
+
+
+<h2>Ensemble Learning</h2>
+<ul>
+  <li>
+    <a href="https://www.analyticsvidhya.com/blog/2018/06/comprehensive-guide-for-ensemble-models/">
+    A comprehensive guide to Ensemble Learning
+    </a>
+  </li>
+</ul>
+
+
+<h2>Neural Networks</h2>
+<ul>
+  <li>
+    <a href="https://medium.com/@GaryMarcus/in-defense-of-skepticism-about-deep-learning-6e8bfd5ae0f1">In defense of skepticism about deep learning</a>, by Gary Marcus (2018)<br>
+    <a href="https://arxiv.org/pdf/1801.00631.pdf">Deep Learning: A Critical Appraisal</a>, by Gary Marcus (2018)
+  </li>
+  <li>
+    <a href="http://www.asimovinstitute.org/neural-network-zoo/">The Neural Network Zoo</a>:
+    A survey of the different neural network architectures; Fjodor van Veen (2016).
+  </li>
+  <li>
+  	<a href="https://karpathy.github.io/2019/04/25/recipe/">A Recipe for Training Neural Networks</a>, Andrej Karpathy blog
+  </li>
+  <li>
+    <a href="http://deeplearning.stanford.edu/tutorial/">Stanford Deep Learning Tutorial</a>
+  </li>
+  <li>
+    <a href="http://neuralnetworksanddeeplearning.com/">Neural Networks and Deep Learning</a>
+    , by Michael Nielsen
+  </li>
+  <li>
+    <a href="http://arxiv.org/abs/1510.00726">A Primer for Neural Network Models for Natural Language Processing</a>
+  </li>
+  <li>
+    <a href="http://sebastianruder.com/optimizing-gradient-descent/">Sebastian Ruder blog: An overview of gradient descent optimization algorithms</a>
+  </li>
+  <li>
+    <a href="https://medium.com/@karpathy/yes-you-should-understand-backprop-e2f06eab496b#.u8exric5h">Yes, you should understand backprop!</a>
+  </li>
+  <li>
+    <a href="http://karpathy.github.io/2015/05/21/rnn-effectiveness/">The Unreasonable Effectiveness of Recurrent Nerual Networks</a>
+  </li>
+  <li>
+    <a href="http://colah.github.io/posts/2015-08-Understanding-LSTMs/">
+    Tutorial on RNNs by Chris Olah
+    </a>
+    (And the rest of his blog is worth checking out -- lots of good explanations)
+  </li>
+  <li>
+    <a href="http://www.wildml.com/2015/09/recurrent-neural-networks-tutorial-part-1-introduction-to-rnns/">
+    Tutorial on RNNs by WildML
+    </a>
+  </li>
+  <li>
+    <a href="http://rylanschaeffer.github.io/content/research/overcoming_catastrophic_forgetting/main.html">Overcoming catastrophic forgetting</a>
+  </li>
+  <li>
+    <a href="ftp://ftp.sas.com/pub/neural/FAQ.html">Sarle's NN FAQ (older, but lots of good info still relevant today)</a>
+  </li>
+</ul>
+
+
+<h2>Sampling for probabilistic inference</h2>
+<ul>
+  <li>
+    <a href="https://www.umiacs.umd.edu/~resnik/pubs/LAMP-TR-153.pdf">Gibbs Sampling for the uninitiated (pdf)</a>
+  </li>
+</ul>
+
+
+<h2>Meta-machine learning</h2>
+<ul>
+  <li>
+    <a href="http://papers.nips.cc/paper/4522-practical-bayesian-optimization-of-machine-learning-algorithms.pdf">Practical Bayesian Optimization of Machine Learning Algorithms (pdf; NIPS 2012)</a>
+  </li>
+</ul>
+
+
+<h2>Mostly for fun...</h2>
+ 
+Demonstrations of other interesting approaches to machine learning not covered in this course <br><br>
+
+Genetic Algorithms
+<ul>
+  <li>
+    <a href="http://www.boxcar2d.com/">boxcar2d</a><br>
+      Fun and informative web-based implementation of a genetic algorithm that evolves wheeled vehicles.
+  </li>
+</ul>
+
+Reinforcement Learning
+<ul>
+  <li>
+    <a href="https://www.youtube.com/watch?v=hx_bgoTF7bs">Emergence of locomotion behavior in rich environments[Youtube]</a><br>
+    <a href="https://arxiv.org/abs/1707.02286">Original paper</a>
+  </li>
+  <li>
+    <a href="http://heli.stanford.edu/">Stanford Autonomous
+      Helicopter</a><br> Impressive demonstration of what you can do
+      with reinforcement learning (in an apprenticeship learning
+      framework).
+  </li>
+  <li>
+    <a href="http://mnemstudio.org/path-finding-q-learning-tutorial.htm">Simple Q-learning tutorial</a>
+  </li>
+  <li>
+    <a href="https://www.nervanasys.com/demystifying-deep-reinforcement-learning/">Demystifying Deep Reinforcement Learning (Part I)</a> and 
+    <a href="https://www.nervanasys.com/deep-reinforcement-learning-with-neon/">(Part II)</a>
+  </li>
+  <li>
+    <a href="http://rll.berkeley.edu/deeprlcourse/">Deep Reinforcement Learning</a><br>
+    Schulman and Abbeel Berkeley course.
+  </li>
+  <li>
+    <a href="https://www.alexirpan.com/2018/02/14/rl-hard.html">Deep reinforcement learning doesn't work yet (Feb 14, 2018)</a>
+  </li>
+</ul>
+
+</div> <!-- end content -->
+</div> <!-- end wrapper -->
+
+<!-- END MAIN BODY : LINKS -->
+
+
+<!-- FOOTER -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-35913794-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</body>
+
+<br><br><br>
+
+</html>

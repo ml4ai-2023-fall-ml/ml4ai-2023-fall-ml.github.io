@@ -1,0 +1,277 @@
+<html>
+
+<!-- START HEADER -->
+
+<table style="border: 0px dotted; border-color:#555555" width=700 align=center>
+<tr><td bgcolor="#fefefe"><center>
+
+<!-- HEADER BODY -->
+<head>
+  <title>Intro to Machine Learning</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta NAME="KEYWORDS" CONTENT="clayton morrison, machine learning">
+  <meta NAME="DESCRIPTION" CONTENT="ISTA 421 / INFO 521: Machine Learning homepage.">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	
+
+<div style="position:relative; left:0">
+  <div style="line-height:1">
+  <font size=+2 color="#222222">ISTA 421 / INFO 521</font><br> 
+  <font size=+3 color="#222222"><b>Introduction to Machine Learning</b></font><br>
+  <font size=+2 color="#222222">[Fall 2021]</font><br>
+  </div>
+
+  <div style="line-height:2">
+    <a href="index.html">course home</a> |
+    <a href="ISTA421-INFO521-Machine-Learning-Syllabus-fall2021.pdf">syllabus [pdf]</a> |
+    <a href="python_setup.html">python setup</a> |
+    <!-- <a href="tutorial.html">short code tutorial</a> | -->
+    <a href="submissions.html">submission instructions</a> |
+    <a href="links.html">links</a> |
+    <a href="schedule.html">schedule</a>
+  </div>
+</div>
+<!-- END HEADER BODY -->
+
+</center></td> </tr>
+</table>
+
+<table style="border: 0px dotted; border-color:#555555; position:relative; top: 1;" width=700 align=center>
+<tr><td bgcolor="#333333"></td></tr>
+</table>
+
+<table style="border: 0px dotted; border-color:#555555; position:relative; top: 1;" width=700 align=center>
+<tr><td bgcolor="#fefefe"><br><br>
+
+<center>
+<table width=600 align=center>
+<tr><td>
+
+<!-- END HEADER -->
+
+
+<!-- MAIN BODY : PYTHON_SETUP -->
+<h2>Setting up Python</h2>
+
+<a href="http://python.org">python.org</a>
+
+<a href="https://realpython.com/intro-to-pyenv/">RealPython's introduction to working with pyenv</a>
+
+<p>Programming project assignments will be developed to run in python 3.8+.  <a href="https://www.python.org/downloads/">The latest version of Python 3 is 3.7.4</a>.  For those who have primarily used Python 2 in the past, <a href="https://docs.python.org/3/howto/pyporting.html">this page discusses transitioning from Python 2 to 3</a>.
+<!--
+	In past semesters, the programming project assignments were developed to run in python 2.7; <a href="https://www.python.org/downloads/">the latest version of the language is python 2.7.12</a>, although any flavor of 2.7 should work.  (Python 2.6 can also be used, but 2.7 is recommended.)
+-->
+</p>
+
+<!--
+<p>At the level we are using Python in this course, the differences between Python 2.7 and 3 are small.  If you wish to use Python 2.7, you may, but you are solely responsible for making any needed changes to the released project code, and you must <b>clearly</b> indicate that you are using Python 2.7; we will otherwise assume it is Python 3.7+, and if the code does not run we will not grade it.</p>
+-->
+
+<p>In the following, $ is used to indicate a unix-flavor command-line.</p>
+
+<p><a href="https://docs.python.org/3/tutorial/">Official Python tutorial</a></p>
+<!-- <p><a href="tutorial.html">Brief Python and Unix tutorial</a></p> -->
+
+<h3>Required modules:</h3>
+
+<ul>
+<li>NumPy: <a href="http://www.numpy.org/">http://www.numpy.org/</a><br>
+Python library for mathematical computing.
+</li>
+<li>SciPy: <a href="http://www.scipy.org/">http://www.scipy.org/</a><br>
+Builds on NumPy with additional scientific computing facilities.
+</lli>
+<li>matplotlib: <a href="http://matplotlib.org/">http://matplotlib.org/</a><br>
+Plotting/graphing, intentionally close to Matlab's plotting facility.<br>
+Browse the matplotlib <a href="http://matplotlib.org/gallery.html">gallery</a> for example code.
+</li>
+</ul>
+
+<h2>Installation options:</h2>
+
+<p>There are two general approaches for setting up a python environment.</p>
+
+<ol>
+<li><b>Approach I: Use a pre-packaged, sandboxed distribution:</b><br>
+The following are cross-platform (Mac, Linux, Windows).  Installing these puts the entire python installation, with a large set of pre-packaged modules (includes numpy, scipy, matplotlib), into a stand-alone sandbox, completely independent of any other python environment on your machine.  These also include a package manager and IDE):
+<ul>
+
+<li><a href="https://www.enthought.com/enthought-deployment-manager/">Enthought Deployment Manager (EDM)</a> is <a href="https://assets.enthought.com/downloads/edm/">available for download</a> for free.<br>
+(Enthought <a href="https://support.enthought.com/hc/en-us/articles/360038600051-Canopy-GUI-end-of-life-transition-to-the-Enthought-Deployment-Manager-EDM-and-Visual-Studio-Code">used to provide </a>the accompanying Canopy Express GUI, but this is now removed and Enthought instead recommends pairing EDS with <a href="https://code.visualstudio.com/">Visual Studio Code</a> for the IDE.)
+
+<!--
+<li><a href="https://www.enthought.com/products/canopy/">Enthought Canopy</a>
+The Canopy Express release is free.
+Once installed, us the <a href="http://docs.enthought.com/canopy/quick-start/package_manager.html">Package Manager</a> to update to the latest versions of the Enthought release of included python modules.
+</li>
+-->
+
+<li><a href="https://store.continuum.io/cshop/anaconda/">Anaconda</a>
+I have heard good things about Anaconda
+<!--, and appears to work similarly to Canopy as a sandboxed distribution and all of the modules you will need, -->
+but I don't have any personal experience using it.
+</li>
+
+<li>List of <a href="https://www.python.org/download/alternatives/">alternative python distributions</a> (many of these include IDEs)
+</li>
+</ul>
+</li> <!-- End of pre-packaged distributions -->
+
+<br>
+
+<li><b>Approach II: Install Python, modules, and IDE separately:</b>
+
+<p></p>
+
+<ol>
+<li><b>Install Python</b> (or use the existing python install in your OS; ensure it is Python 3.7).<br>
+
+If you want to keep your install of Python and any modules you work with for the class <em>separate</em> from your OS's native Python, I recommend either using a sandbox distribution release like Enthought Canopy (above), or use <a href="http://docs.python-guide.org/en/latest/dev/virtualenvs/">Python virtualenv</a> (Here's <a href="http://stackoverflow.com/questions/5844869/comprehensive-beginners-virtualenv-tutorial">a good place to start</a> to learn about virtualenv).<br><br>
+
+<b>Platform-specific notes:</b>
+
+<ul>
+<li>
+	<b>Linux</b>: <a href="https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-local-programming-environment-on-ubuntu-16-04">Setting up Python 3 on Ubuntu</a>
+</li>
+<!--
+<li><b>Linux</b>: python 2.7 is included in Ubuntu and and Fedora<br>
+<a href="http://docs.python-guide.org/en/latest/starting/install/linux/">Notes for python on linux install</a>
+</li>
+-->
+<li><b>Mac</b>: A version of Python 3 <!-- Python 2.7 --> comes installed with mac osx, but 	I recommend doing a separate installation in order to not interfere with the system
+	installation.  
+
+	<br>First, 
+
+	<ul>
+	<li>Ensure <a href="https://developer.apple.com/xcode/">XCode</a> is installed.  To check if XCode is installed properly, you can type gcc in the command-line. If you get gcc: command not found, then XCode is not properly installed.
+		(depending on your version of Mac OSX, you may be able to use 
+		the following command to install directly from the command line:<br>
+		<code>$ xcode-select --install</code>)</li>
+	</ul>
+
+	I then recommend using either one of the following package managers:
+
+	<ul>
+	<li>
+	(A) I now use <a href="http://brew.sh/">Homebrew</a> for Mac package management
+	<ul>
+	<li>(i) Install <a href="http://brew.sh/">Homebrew</a></li>
+	<!-- <li>(ii) <code>$ brew install python</code>  # grabs latest python 2.7.x</li> -->
+	<li>(ii) <code>$ brew install python3</code>  # grabs latest python 3</li>
+	<!-- <li>(iii) <code>$ pip install --upgrade pip</code> # ensures pip is up to date </li> -->
+	<li>(iii) <code>$ pip3 install --upgrade pip</code> # ensures pip for Python 3 is up to date </li>
+	</ul>
+	</li> <!-- End Homebrew -->
+
+	<li>
+	(B) In the distant past I used <a href="https://www.macports.org/">MacPorts</a>, with the following recipe for setting up Python 2.7; likely just need to adjust a little for python 3 -- <a href="https://machinelearningmastery.com/install-python-3-environment-mac-os-x-machine-learning-deep-learning/">try starting here</a>:
+	<ul>
+	<li>(i) Install <a href="https://www.macports.org/">MacPorts</a> (After downloading and installing, run<br><code>$ sudo port selfupdate</code>)</li>
+	<li>(ii) <code>$ sudo port install python2.7 pip</code></li>
+	<li>(iii) <code>$ sudo port select --set python python27</code></li>
+	</ul>
+	<!--
+	You can then either use MacPorts to install NumPy, SciPy and matplotlib by<br>
+	<code>$ sudo port install py27-matplotlib py27-numpy py27-scipy</code><br>
+	OR use PIP (I recommend PIP, see below under).
+	-->
+	</li> <!-- End Macports -->
+	</ul>
+
+</li> <!-- End Mac -->
+
+<li><b>Windows</b>: 
+  <ul>
+	<li><a href="https://docs.python.org/3/using/windows.html">Using Python 3 on Windows</a></li>
+	<li>Note on installing numpy, scipy and matplotlib: After installing Python 3, some Windows users have reported (fall 2017) trouble with installing scipy.  The following was found to work, as long as you install all three, starting with the following version of numpy first:
+		<ul>
+			<li>First, download one version of the .whl files (depending on whether you have win32 or win_amd64) for the following three packages from here: <a href="http://www.lfd.uci.edu/~gohlke/pythonlibs">Unofficial Windows Binaries for Python Extension Packages</a>
+			<ul>
+				<li>from <a href="http://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy">numpy</a>
+					choose either 
+					<code>numpy-1.13.1+mkl-cp36-cp36m-win32.whl</code> or 
+					<code>numpy-1.13.1+mkl-cp36-cp36m-win_amd64.whl</code></li>
+				<li>from <a href="http://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy">scipy</a>
+					choose either 
+					<code>scipy-0.19.1-cp36-cp36m-win32.whl</code> or 
+					<code>scipy-0.19.1-cp36-cp36m-win_amd64.whl</code></li>
+				<li>from <a href="http://www.lfd.uci.edu/~gohlke/pythonlibs/#matplotlib">
+					matplotlib</a>
+					choose either
+					<code>matplotlib-2.0.2-cp36-cp36m-win32.whl</code> or 
+					<code>matplotlib-2.0.2-cp36-cp36m-win_amd64.whl</code></li>
+			</ul>
+			<li>Second, from a command-line shell (e.g., PowerShell, Windows bash, etc.), change directory (cd) to the place where you downloaded the .whl files (e.g., Downloads)</li>
+			<li>Third, from the command-line, you will now pip install first numpy, then scipy, then matplotlib.  Pip install by using this command from the command-line:<br><code>$ pip install &#60;.whl-filename&#62;</code><br>... where &#60;.whl-filename&#62;</code> is the name of the .whl file you downloaded.</li>
+		</ul>
+	</li>
+  </ul>
+<!-- <li><b>Windows</b>: <a href="https://docs.python.org/2/using/windows.html">Using python on Windows</a> -->
+</li>
+</ul>
+
+</li> <!-- End of Install Python -->
+
+<br>
+
+<li><b>Install NumPy, SciPy, matplotlib</b>.  
+	<!-- Highly recommend <a href="https://pip.pypa.io/en/latest/installing.html">installing and using PIP</a> for python module installation and management.  -->
+	Highly recommend using <a href="https://packaging.python.org/tutorials/installing-packages/#use-pip-for-installing">PIP</a>.  PIP is now typically installed as part of standard python installations.
+<ul>
+<li>PIP is a unix command-line tool like a package manager for python site-package module management.</li>
+<!-- <li>NOTE: <a href="https://docs.python.org/2/installing/">It is claimed</a> that PIP is now included in Python 2.7.9. (but I haven't verified this myself, meaning I'm not sure if it just automagically is installed for the command line when you install 2.7.9 or need to do an extra step...)</li> -->
+<li>Once pip is installed, you can use<br><code>$ pip install numpy</code><br>and similarly for scipy and matplotlib</li>
+</ul>
+Or you can install NumPy, SciPy, and matplotlib independently (preferably using a package manager like, such as <a href="http://brew.sh/">Homebrew</a> on the Mac).
+</li> <!-- End of Install PIP, modules -->
+
+<br>
+
+<li><b>Python IDE</b><br>
+<ul>
+<li>These IDEs require independent installation of python and modules (as opposed to using the packaged IDE provided in a sandboxed Python distribution, like Enthought Canopy, above)</li>
+<li>There are many options for editors/IDEs.  IDEs, of course, give more Python-aware editing (ranging from syntax to semantic highlighting, tool-tips, multi-file and module structure awareness, etc...).  NOTE: For many of these IDEs you will need to go through the step of making the IDE aware of where your Python installation is located -- this is typically done by using the IDE's preferences facility to identify the system path to python executable and site-packages directory (all usually accomplished by a single path); see your IDE's docs for how to do this.  All of the following are free and multiplatform.
+<ul>
+<li>Any basic text editor will work!  You'll just edit, save edits then run from the command-line.</li>
+<li>You could use Emacs (the simple <a href="tutorial.html">course Python Tutorial</a> includes some notes about Emacs; <a href="http://aquamacs.org/">Aquamacs</a> is the best Mac flavor of Emacs) or <a href="http://en.wikipedia.org/wiki/Vi">vi</a>.  Both options provide varying levels of Python awareness and plugins.</li>
+<li><a href="https://www.jetbrains.com/pycharm/download/">PyCharm Community Edition</a> is excellent</li>
+<li><a href="http://www.sublimetext.com/">Sublime Text</a> is also excellent (but will bug you periodically to buy it).</li>
+<li><a href="https://eclipse.org/">Eclipse</a> with the <a href="http://pydev.org/">PyDev</a> plugin works will for many people.  There is the <a href="http://www.liclipse.com/">LiClipse</a> bundle which I have not tried but looks intriguing</li>
+</ul> <!-- End python IDEs -->
+</li>
+<li>Another <a href="https://wiki.python.org/moin/IntegratedDevelopmentEnvironments">list of python IDEs</a>
+</li>
+
+</li> <!-- End of Install IDE -->
+
+</li> <!-- End of install python, modules and IDE -->
+
+</div> <!-- end content -->
+</div> <!-- end wrapper -->
+
+<!-- END MAIN BODY : PYTHON_SETUP -->
+
+
+<!-- FOOTER -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-35913794-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</body>
+
+<br><br><br>
+
+</html>

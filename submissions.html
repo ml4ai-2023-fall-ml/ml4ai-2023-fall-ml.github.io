@@ -1,0 +1,170 @@
+<html>
+
+<!-- START HEADER -->
+
+<table style="border: 0px dotted; border-color:#555555" width=700 align=center>
+<tr><td bgcolor="#fefefe"><center>
+
+<!-- HEADER BODY -->
+<head>
+  <title>Intro to Machine Learning</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta NAME="KEYWORDS" CONTENT="clayton morrison, machine learning">
+  <meta NAME="DESCRIPTION" CONTENT="ISTA 421 / INFO 521: Machine Learning homepage.">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	
+
+<div style="position:relative; left:0">
+  <div style="line-height:1">
+  <font size=+2 color="#222222">ISTA 421 / INFO 521</font><br> 
+  <font size=+3 color="#222222"><b>Introduction to Machine Learning</b></font><br>
+  <font size=+2 color="#222222">[Fall 2021]</font><br>
+  </div>
+
+  <div style="line-height:2">
+    <a href="index.html">course home</a> |
+    <a href="ISTA421-INFO521-Machine-Learning-Syllabus-fall2021.pdf">syllabus [pdf]</a> |
+    <a href="python_setup.html">python setup</a> |
+    <!-- <a href="tutorial.html">short code tutorial</a> | -->
+    <a href="submissions.html">submission instructions</a> |
+    <a href="links.html">links</a> |
+    <a href="schedule.html">schedule</a>
+  </div>
+</div>
+<!-- END HEADER BODY -->
+
+</center></td> </tr>
+</table>
+
+<table style="border: 0px dotted; border-color:#555555; position:relative; top: 1;" width=700 align=center>
+<tr><td bgcolor="#333333"></td></tr>
+</table>
+
+<table style="border: 0px dotted; border-color:#555555; position:relative; top: 1;" width=700 align=center>
+<tr><td bgcolor="#fefefe"><br><br>
+
+<center>
+<table width=600 align=center>
+<tr><td>
+
+<!-- END HEADER -->
+
+
+<!-- MAIN BODY : SUBMISSIONS -->
+<h2>Assignment Submission Instructions</h2>
+
+<p><a href="index.html">ISTA 421 / INFO 521 Home</a>
+
+<h3>Introduction</h3>
+
+<p>Unless otherwise noted, we will use GitHub Classroom, a service of <a href="https://github.com">GitHub</a>, for submitting all assignments.</p>
+
+<p>For each assignment, we will release a link to will provide you access to a repository that will be generated and associated with your github account. This is the repository you will use for the assignment.<p>
+
+<p>In general, all assignments will involve two components: written portion and programming portion.</p>
+
+<p>Follow the instructions for the specific assignment, versioning <b>only</b> what is specified in the homework release instructions plus any additional files you create yourself that your code depends on.</p>
+
+<!--
+We use <a href="https://travis-ci.com">Travis CI</a> for continuous integration to build and test your code. If it fails to run, we won't grade it.</p>
+-->
+
+<p><b>For the first assignment (hw1)</b> there is one additional step: Once you have cloned your version of the hw1, send an email cc'ing both instructors (cromanpa94@arizona.edu and claytonm@arizona.edu) with the subject line:
+<pre>
+[ista421-github]
+</pre>
+In the body of the email, give your full name (as you use in the course) and the name of the GitHub account you used to register your repository.
+The reason we ask this is that GitHub accounts do not always provide a person's name, and in order for us to record your grade, we need to know that your GitHub account corresponds to you!</p>
+
+<h3> Submission </h3>
+
+<h4>GitHub</h4>
+<p>You need a personal (free) account on GitHub to clone and push your changes. If you already have one, you can use it, otherwise you can sign up <a href="https://github.com">here</a>.</p>
+
+<p> You will have an individual, private repository on GitHub for each of the assignments. You will use this repository to check in your progress, submit your final code and written solutions and request feedback from the instructors of the course. If you need to get acquainted with git, you can start by reading some of the tutorials at <a href="https://try.github.io">https://try.github.io</a>.</p>
+
+<h4> Programming Portion of Assignments </h4>
+
+<p><b>Important note:</b> Include <b>comments</b> in your code that explain <em>clearly</em> what your code is doing!</p>
+
+<p>
+You will implement your code in the python source files where specified by the assignment's specifications. When you make progress, you will need to <b>commit and push</b> your changes into the repository.
+</p>
+
+<h4 id="written"> Written Portion of Assignments </h4>
+
+All written assignments will be completed and versioned into the individual git repository for the assignment. <b>All written portions of assignments must be submitted in PDF format</b>.
+
+Use the following naming convention to name your submitted pdf:<br>
+<pre>
+     hw&lt;homework-number&gt;-answers.pdf
+</pre>
+So, for example, if  you are submitting homework 3, then your file will have the following name:
+<pre>
+     hw3-answers.pdf
+</pre>
+This .pdf file can be added to the repository with:
+<pre>
+     $ git add hw3-answers.pdf
+     $ git commit -m "Versioned the written part of my assignment"
+     $ git push
+</pre>
+
+<h4> Final submission </h4>
+<p>
+Your final submission should be pushed into the <tt>master</tt> branch. Every time you make some progress, it is advised that you commit and push your changes into your local repository. This is done by running:
+</p>
+<pre>
+  $ git commit -a -m "<Insert here a descriptive message for your commit>"
+  $ git push
+</pre>
+
+<h3>Automatic Testing<h3>
+
+<h4>Local testing</h4>
+
+<p>You can test your progress on the programming part of the assignment locally with <tt>pytest</tt> (see instructions on <a href="https://docs.pytest.org/en/6.2.x/getting-started.html">Create your first test</a>, where here we've already created the tests for you, you just need to see how to run them). If you have a Linux or Mac machine, navigate to the top-level directory of the assignment and run:</p>
+<pre>
+    $ PYTHONPATH=. pytest
+</pre>
+
+<p>This will execute the unit tests included with the assignment. When you're done implementing the excercises, all the tests will pass. Otherwise, you will see an error message that may help you debug your code.</p>
+
+<p>We are working on trying to get our GitHub Classroom for this course to also support testing that will occur when you push changes to your assignment repostory. However, this is not yet functional.</p>
+
+<!--
+<h4>Testing with TravisCI</h4>
+
+<p>You can test your code on Travis. For this, you will need to merge your code into the solution branch and push the aformentioned. You can log into <a href="https://travis-ci.com">Travis CI</a> and inspect the status of build and the output of pytest.</p>
+
+<p>Automated testing on Travis takes time to finish and all the builds of all the students are enqued, therefore it is highly encouraged that you <b>start testing early</b> and not do it the night before the due date, as there will a "build jam" in Travis.</p>
+-->
+
+<h3>Requesting feedback on your code</h3>
+
+<p>You can request feedback from the instructors by using GitHub's features. Open the relevant commit from on GitHub and add comments where appropriate. You can tag any of the instructors with their GitHub handles and they will be notified. You can find detailed instructions <a href="https://help.github.com/en/articles/commenting-on-a-pull-request">here</a>.</p>
+<hr>
+<!-- END MAIN BODY : SUBMISSIONS -->
+
+
+<!-- FOOTER -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-35913794-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</body>
+
+<br><br><br>
+
+</html>

@@ -1,0 +1,86 @@
+/* Generic style stuff... */
+
+body {
+	color: #000000
+	background-color: #FFFFFF;
+	font-family: sans-serif;
+	/* background-image: url("back_page.gif"); */
+	/* background-repeat: repeat-x; */
+}
+
+ul,li,ol { margin: 0em ; padding: 0px ; padding-left: 0px; margin-left: 8px }
+
+/* Most text occurs with a td field */
+td {
+        font-size:90%
+}
+
+a:link {
+	color: #555599;
+	text-decoration: none;
+}
+a:visited {
+	color: #222277;
+	text-decoration: none;
+}
+a[href]:hover {
+	color: #990000;
+	text-decoration: none;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 200%;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 150%;
+}
+
+h3 {
+	font-weight: bold;
+	font-size: 120%;
+}
+
+/** For the resume page ****************/
+<!--
+.heading1b	{color: #000022; font-weight:bold; text-decoration: none; font-size: 16px}
+.heading2b	{color: #000055; font-weight:bold; text-decoration: none; font-size: 16px}
+.heading2b    a {color: #000055; font-weight:bold; font-size: 16px}
+.heading2	{color: #000055; text-decoration: none; font-size: 14px}
+.heading3b	{color: #222277; font-weight:bold; text-decoration: none; font-size: 16px}
+.heading3	{color: #222277; text-decoration: none; font-size: 14px}
+.heading_txt	{color: #000000; text-decoration: none; font-size: 14px}
+.orange		{color: #FF8800; text-decoration: none; font-size: 16px}
+-->
+
+/** For the links page ****************/
+.links {
+        font-size:90%;
+}
+
+h3.links {
+        font-size:95%;
+        text-align:center;
+}
+
+ul.links {
+        position:relative;
+        top:-12
+}
+
+/** For the blog page ****************/
+div.blog h3 {
+}
+
+div.blog h3.date {
+        position:relative; top:10
+}
+
+div.blog i {
+        font-weight:bold;
+        text-style:italics;
+        font-size:90%
+}
+
