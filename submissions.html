@@ -128,13 +128,22 @@ Your final submission should be pushed into the <tt>main</tt> branch. Every time
 
 <h4>Local testing</h4>
 
-<p>You can test your progress on the programming part of the assignment locally with <tt>pytest</tt> (see instructions on <a href="https://docs.pytest.org/en/6.2.x/getting-started.html">Create your first test</a> ; for the assignments in this class, we have already created the tests for you, so you just need to see how to pytest is used to run the tests). If you have a Linux or Mac machine, navigate to the top-level directory of the assignment and run:</p>
+<p>You can test your progress on the programming part of the assignment locally
+with <tt>pytest</tt> (see instructions on <a
+href="https://docs.pytest.org/en/6.2.x/getting-started.html">Create your first
+test</a> . For the assignments in this class, we have already created these tests
+for you. To use pytest, navigate to the top-level directory of the assignment.
+For Linux and Mac users, use:</p>
 <pre>
     $ PYTHONPATH=. pytest
 </pre>
 
-<p>This will execute the unit tests included with the assignment. When you're done implementing the excercises, all the tests will pass. Otherwise, you will see an error message that may help you debug your code.</p>
+<p> Windows users would use:</p>
+<pre>
+    $ python -m pytest
+</pre>
 
+<p>This will execute the unit tests included with the assignment. When you're done implementing the excercises, all the tests will pass. Otherwise, you will see an error message that may help you debug your code.</p>
     <!--
 <p>We are working on trying to get our GitHub Classroom for this course to also support testing that will occur when you push changes to your assignment repostory. However, this is not yet functional.</p>
 -->
